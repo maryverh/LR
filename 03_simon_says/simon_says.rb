@@ -18,8 +18,8 @@ def first_word(a)
   return a[0,a.index(' ')]
 end
   
-#def titleize(a)
- # arr=['a','the','on','over','and','in','under']
- #a.gsub(/\w+/){|match|arr.include? (match)? match:capitalize} 
-#end
+def titleize(a)
+  arr=['a','the','on','over','and','in','under']
+  a.capitalize.gsub(/\w+/){|match|arr.include?(match)?match:match.capitalize} 
+end
 
